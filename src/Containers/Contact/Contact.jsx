@@ -5,7 +5,7 @@ const Contact = props => {
 
     return (
         <div className="contact">
-            <p>Hola Buenos dias soy el Contact</p>
+            <p>Hola Buenos dias registrate</p>
         </div>
     )
 }

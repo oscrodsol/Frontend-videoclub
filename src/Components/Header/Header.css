@@ -26,15 +26,26 @@
     align-items: center;
     width: 75em;
 }
-.input_header{
+.registrarse{
     display: flex;
     justify-content: center;
     align-items: right;
-    height: 2em;
-    width: 3em;
+    height: 3em;
+    width: 4em;
 }
 .logo{
     margin: 1em;
     width: 4em;
     height: 4em;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    height: 3em;
+    width: 5em;
+}
+.busqueda{
+    width: 12em;
+    height: 2em;
 }

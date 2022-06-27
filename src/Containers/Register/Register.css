@@ -1,0 +1,10 @@
+.register{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+    background-color: aquamarine;
+    color: black;
+    height: 80vh;
+    width: 100vw;
+}
