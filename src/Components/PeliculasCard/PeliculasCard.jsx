@@ -5,11 +5,13 @@ const PeliculasCard = props => {
     
     return (
         <div className="PeliculasCard">
-            <span className="film">
-            Titulo: {props.data.title}
-            Foto: {props.data.backdrop_path}
-            Popularidad: {props.data.popularity}
-            Votacion: {props.data.vote_average}</span>
+            <div className="film">
+                <strong className="ntitulo">{props.data.titulo}</strong><br></br>
+                <br></br><img className="portadas" src={props.data.url}></img><br></br>
+                <strong>Duracion:</strong> {props.data.duracion}<br></br> 
+                <strong>Rating:</strong> {props.data.rating} 
+                
+            </div>
         </div>
     )
 }

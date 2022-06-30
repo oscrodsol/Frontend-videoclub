@@ -11,11 +11,11 @@ const Home = (props) => {
     let [cartelera, setCartelera] = useState([])
 
      useEffect(() => {
-         axios.get('https://api.themoviedb.org/3/movie/popular?language=en-US&api_key=cac61624997edd865edf5c5c8caec2a2')
+         axios.get('https://videoclub-backend.herokuapp.com/peliculas')
          .then(resp => {
             console.log(resp)
             setCartelera(
-               resp.data.results
+               resp.data
             )
         })
     },[])
@@ -23,8 +23,8 @@ const Home = (props) => {
     return (
         <div className="home">
                 {
-                cartelera.map((pelis) => (
-                    <PeliculasCard data={pelis}/>
+                cartelera.map((pelis, index) => (
+                    <PeliculasCard key={index} data={pelis}/>
                 ))
                 }
         </div>
