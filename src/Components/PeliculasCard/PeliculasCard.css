@@ -1,0 +1,19 @@
+.PeliculasCard {
+    padding: 1em;
+    margin: 1em;
+    background-color: #e6aa13;
+    border-radius: 1em;
+    border: .2em solid black;
+}
+.ntitulo{
+    font-size: 1.8em;
+}
+.film{
+    height: 26em;
+    width: 20em;
+    padding: 1em;
+}
+.portadas{
+    height: 20em;
+    width: 17em;
+}
