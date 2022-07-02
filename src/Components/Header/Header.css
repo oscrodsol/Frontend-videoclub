@@ -26,24 +26,17 @@
     align-items: center;
     width: 75em;
 }
-.registrarse{
+.ilogin{
     display: flex;
     justify-content: center;
     align-items: right;
     height: 3em;
-    width: 4em;
+    width: 3em;
 }
 .logo{
     margin: 1em;
     width: 4em;
     height: 4em;
-}
-.login{
-    display: flex;
-    justify-content: center;
-    align-items: right;
-    height: 3em;
-    width: 5em;
 }
 .busqueda{
     width: 12em;

@@ -5,7 +5,8 @@ import Contact from "./Containers/Contact/Contact"
 import Home from './Containers/Home/Home'
 import Header from "./Components/Header/Header"
 import Footer from "./Components/Footer/Footer"
-import Register from "./Containers/Register/Register"
+import Register from "./Containers/User/Register/Register"
+import Login from "./Containers/User/Login/Login"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
                   <Route path="/movies" element={<List/>}/>
                   <Route path="/register" element={<Register/>}/>
                   <Route path="/contact" element={<Contact/>}/>
+                  <Route path="/login" element={<Login/>}/>
               </Routes>
             <Footer/>
       </BrowserRouter>
