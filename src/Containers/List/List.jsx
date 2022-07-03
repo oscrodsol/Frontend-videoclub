@@ -49,8 +49,9 @@ const List = props => {
                 /*                 cartelera.map((pelis, index) => (
                                     <PeliculasCard key={index} data={mostrar} />
                                 )) */
-                <div className="div">
+                <div className="tarjeta">
                     <PeliculasCard data={mostrar} />
+                    {mostrar.sinopsis}
                 </div>
             }
             
