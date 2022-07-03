@@ -19,6 +19,7 @@ import { Form, Button, Row, Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import { registerUser, userSelector } from '../userSlice'
 import { useNavigate } from 'react-router-dom'
+import "./Register.css"
 
 const Register = props => {
     const dispatch = useDispatch()
@@ -96,7 +97,7 @@ const Register = props => {
             <Col md={6}>
                 <h1>Registro</h1>
                 <br></br>
-                 <pre>{JSON.stringify(register, null,5)}</pre> 
+                 {/* <pre>{JSON.stringify(register, null,5)}</pre> */} 
                 <Form onSubmit={userRegister}>
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Nombre</Form.Label>

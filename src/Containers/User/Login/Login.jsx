@@ -69,7 +69,8 @@ const Login = (props) => {
     return(
             <div className="login">
                 <div className='loginDesign'>
-                    <pre>{JSON.stringify(datosLogin, null,2)}</pre>
+                    <h1>Login</h1>
+                    {/* <pre>{JSON.stringify(datosLogin, null,2)}</pre> */}
                     <input  type='email' name='dni' title='dni' onChange={modificaDatosLogin} lenght='30'/>
                     <input  type='password'  name='password' title='password' onChange={modificaDatosLogin} lenght='30'/><br></br>
                     <div className="msgError">{msgError}</div>
