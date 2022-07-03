@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { selectDatosUsuario, loginUsuario } from '../userSlice';
 import { useState } from 'react';
 import { Form, Button, Row, Col } from 'react-bootstrap'
+import img3 from '../../../assets/iconoform.png'
 
 const Login = (props) => {
     //hooks
@@ -70,9 +71,11 @@ const Login = (props) => {
                 <div className='loginDesign'>
                     <pre>{JSON.stringify(datosLogin, null,2)}</pre>
                     <input  type='email' name='dni' title='dni' onChange={modificaDatosLogin} lenght='30'/>
-                    <input  type='password'  name='password' title='password' onChange={modificaDatosLogin} lenght='30'/>
-                    <div className="sendButton" onClick={()=>logeame()}>Login</div>
-                    <div>{msgError}</div>
+                    <input  type='password'  name='password' title='password' onChange={modificaDatosLogin} lenght='30'/><br></br>
+                    <div className="msgError">{msgError}</div>
+                    <div className="sendButton" onClick={()=>logeame()}>Login</div><br></br>
+                    <div className="botonregister" to="/register">Si no estas registrado, registrate aqui.<img className="iregister "src={img3} onClick={()=> navegador("/register")}/></div>
+                    
                 </div>
             </div>
     )
