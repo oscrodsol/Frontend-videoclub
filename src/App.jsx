@@ -1,43 +1,30 @@
-import { useState } from 'react'
-import logo from './logo.svg'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import './App.css'
+import List from './Containers/List/List'
+import Genero from "./Containers/Genero/Genero"
+import Home from './Containers/Home/Home'
+import Header from "./Components/Header/Header"
+import Footer from "./Components/Footer/Footer"
+import Register from "./Containers/User/Register/Register"
+import Login from "./Containers/User/Login/Login"
+import Profile from "./Containers/Profile/Profile"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+      <BrowserRouter>
+            <Header/>
+              <Routes>
+                  <Route path="/" element={<Home/>}/>
+                  <Route path="/movies" element={<List/>}/>
+                  <Route path="/register" element={<Register/>}/>
+                  <Route path="/genero" element={<Genero/>}/>
+                  <Route path="/login" element={<Login/>}/>
+                  <Route path="/profile" element={<Profile/>}/>
+              </Routes>
+            <Footer/>
+      </BrowserRouter>
     </div>
   )
 }
