@@ -5,6 +5,7 @@ import {useSelector} from 'react-redux'
 import {selectDatosUsuario, logOut} from '../../Containers/User/userSlice'
 import img from "../../assets/logopelicula.png"
 import img2 from "../../assets/login.png"
+import { Button } from 'react-bootstrap';
 
 
 const Header = props => {
@@ -16,7 +17,7 @@ const Header = props => {
         navegador(destino)
     }
 
-    if(!credenciales?.token !== ""){
+    if(!credenciales?.token){
 
     return (
         <div className="header">

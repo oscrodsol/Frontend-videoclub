@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectDatosUsuario, loginUsuario } from '../userSlice';
 import { useState } from 'react';
-
+import { Form, Button, Row, Col } from 'react-bootstrap'
 
 const Login = (props) => {
     //hooks
