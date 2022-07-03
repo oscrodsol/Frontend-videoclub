@@ -7,6 +7,7 @@ import Header from "./Components/Header/Header"
 import Footer from "./Components/Footer/Footer"
 import Register from "./Containers/User/Register/Register"
 import Login from "./Containers/User/Login/Login"
+import Profile from "./Containers/Profile/Profile"
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
                   <Route path="/register" element={<Register/>}/>
                   <Route path="/contact" element={<Contact/>}/>
                   <Route path="/login" element={<Login/>}/>
+                  <Route path="/profile" element={<Profile/>}/>
               </Routes>
             <Footer/>
       </BrowserRouter>

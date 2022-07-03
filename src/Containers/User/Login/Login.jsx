@@ -32,7 +32,7 @@ const Login = (props) => {
     useEffect (()=>{
         //Comprobamos si tenemos token
         if(credenciales?.token !== ''){
-            navegador("/");
+            navegador("/Profile");
         }
     },[]);
 

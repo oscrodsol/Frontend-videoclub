@@ -44,7 +44,7 @@ const Header = props => {
                     <input className="busqueda" placeholder="Titulo, director..." type="text"/>
                 </div>
                 <div>
-                    <div className="nombreUsuario">Bienvenido,{credenciales.user.nombre} </div>
+                    <NavLink className="navlink" to="/Profile">Bienvenido,{credenciales.user.nombre} </NavLink>
                 </div>
             </div>
         )
