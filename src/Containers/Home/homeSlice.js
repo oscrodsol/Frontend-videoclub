@@ -16,13 +16,18 @@ export const homeSlice = createSlice({
     },
 });
 
-export const peliculasFiltradas = (body) => async (dispatch) => {
+export const peliculasFiltradas = (argumento) => async (dispatch) => {
+
     try{
+
+        let body = {
+            titulo : argumento
+          };
         const user = await axios.post('https://videoclub-backend.herokuapp.com/peliculas/letrapelicula',body);
-        console.log(user.data)
+        console.log(user.data[0])
         if(user.status === 200){
             dispatch(letraPelicula({
-                titulo: user.data
+                titulo: user.data[0].titulo
             }))
         }
         
@@ -34,6 +39,6 @@ export const peliculasFiltradas = (body) => async (dispatch) => {
 
 export const {letraPelicula} = homeSlice.actions
 
-export const selectLetraPelicula = (state) => state.peliculas.input
+export const selectLetraPelicula = (state) => state.peliculas.titulo
 
 export default homeSlice.reducer;
