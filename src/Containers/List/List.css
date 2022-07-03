@@ -1,10 +1,13 @@
 .list{
-    display: flex;
-    justify-content:center;
-    align-items: center;
     
+}
+.tarjeta{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
     background-color: aquamarine;
     color: black;
     height: 80vh;
-    width: 100vw;
+    width: 70vw;
 }

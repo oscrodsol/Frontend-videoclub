@@ -1,13 +1,13 @@
 import React from "react"
-import "./Contact.css"
+import "./Genero.css"
 
-const Contact = props => {
+const Genero = props => {
 
     return (
-        <div className="contact">
+        <div className="genero">
             <p>Hola Buenos dias registrate</p>
         </div>
     )
 }
 
-export default Contact
+export default Genero

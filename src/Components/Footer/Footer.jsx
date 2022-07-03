@@ -11,7 +11,7 @@ const Footer = props => {
                 <img className="logo" src={img}/>
             </div>
             <div>
-            HOLA PA TI MI COLA
+            HOLA SOY EL FOOTER
             </div>
             
         </div>
