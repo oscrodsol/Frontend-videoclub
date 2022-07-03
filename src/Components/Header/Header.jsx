@@ -28,8 +28,8 @@ const Header = props => {
             <img className="logo" src={img} />
             <div className="menu_header">
                 <NavLink className="navlink" to="/">Inicio</NavLink>
-                <NavLink className="navlink" to="/movies">Categorias</NavLink>
-                <NavLink className="navlink" to="/contact">Contacto</NavLink>
+                {/* <NavLink className="navlink" to="/movies">Categorias</NavLink> */}
+                <div className="navlink">Genero</div>
                 <input className="listInput" onKeyPress={cambioPagina} placeholder="Titulo..." type="text" name="titulo" />
             </div>
             <div>
@@ -43,9 +43,9 @@ const Header = props => {
                 <img className="logo" src={img} />
                 <div className="menu_header">
                     <NavLink className="navlink" to="/">Inicio</NavLink>
-                    <NavLink className="navlink" to="/movies">Categorias</NavLink>
+                    {/* <NavLink className="navlink" to="/movies">Categorias</NavLink> */}
                     <NavLink className="navlink" to="/contact">Contacto</NavLink>
-                    <input className="busqueda" placeholder="Titulo, director..." type="text"/>
+                    <input className="listInput" onKeyPress={cambioPagina} placeholder="Titulo..." type="text" name="titulo" />
                 </div>
                 <div>
                     <div className="nombreUsuario">Bienvenido,{credenciales.user.nombre} </div>

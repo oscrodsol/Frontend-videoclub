@@ -4,7 +4,12 @@ import axios from 'axios';
 export const homeSlice = createSlice({
     name: 'peliculas',
     initialState:{
-        titulo:""
+        titulo:"",
+        genero:"",
+        url:"",
+        duracion:"",
+        rating:"",
+        sinopsis:""
     },
     reducers:{
         letraPelicula: (state, action) => {
@@ -16,18 +21,28 @@ export const homeSlice = createSlice({
     },
 });
 
-export const peliculasFiltradas = (argumento) => async (dispatch) => {
+export const peliculasFiltradas = (titulo, genero, url, duracion, rating, sinopsis) => async (dispatch) => {
 
     try{
 
         let body = {
-            titulo : argumento
+            titulo : titulo,
+            genero : genero,
+            url: url,
+            duracion: duracion,
+            rating: rating,
+            sinopsis: sinopsis
+
           };
         const user = await axios.post('https://videoclub-backend.herokuapp.com/peliculas/letrapelicula',body);
-        console.log(user.data[0])
         if(user.status === 200){
             dispatch(letraPelicula({
-                titulo: user.data[0].titulo
+                titulo: user.data[0].titulo,
+                genero: user.data[0].genero,
+                url: user.data[0].url,
+                duracion: user.data[0].duracion,
+                rating: user.data[0].rating,
+                sinopsis: user.data[0].sinopsis
             }))
         }
         
@@ -39,6 +54,6 @@ export const peliculasFiltradas = (argumento) => async (dispatch) => {
 
 export const {letraPelicula} = homeSlice.actions
 
-export const selectLetraPelicula = (state) => state.peliculas.titulo
+export const selectLetraPelicula = (state) => state.peliculas
 
 export default homeSlice.reducer;

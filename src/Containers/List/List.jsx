@@ -1,8 +1,6 @@
-import { useEffect, useState } from "react"
-import axios from "axios"
+
 import './List.css'
 import PeliculasCard from '../../Components/PeliculasCard/PeliculasCard'
-import { letraPelicula } from "../Home/homeSlice"
 import { useSelector, useDispatch } from 'react-redux';
 import { selectLetraPelicula } from "../Home/homeSlice"
 
@@ -33,7 +31,7 @@ const List = props => {
     /* let [cartelera, setCartelera] = useState(letraPelicula) */
 
     const mostrar = useSelector(selectLetraPelicula)
-
+    
     /*     useEffect(() => {
             axios.post('https://videoclub-backend.herokuapp.com/peliculas/')
                 .then(resp => {
@@ -43,20 +41,19 @@ const List = props => {
                     )
                 })
         }, []) */
-    console.log(selectLetraPelicula);
+        console.log(mostrar)
     return (
         <div className="home">
             {
+                
                 /*                 cartelera.map((pelis, index) => (
                                     <PeliculasCard key={index} data={mostrar} />
                                 )) */
                 <div className="div">
                     <PeliculasCard data={mostrar} />
-                    <p>{mostrar}</p>
                 </div>
-
-
             }
+            
         </div>
     )
 }

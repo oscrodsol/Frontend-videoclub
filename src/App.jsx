@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import './App.css'
 import List from './Containers/List/List'
-import Contact from "./Containers/Contact/Contact"
+import Genero from "./Containers/Genero/Genero"
 import Home from './Containers/Home/Home'
 import Header from "./Components/Header/Header"
 import Footer from "./Components/Footer/Footer"
@@ -18,7 +18,7 @@ function App() {
                   <Route path="/" element={<Home/>}/>
                   <Route path="/movies" element={<List/>}/>
                   <Route path="/register" element={<Register/>}/>
-                  <Route path="/contact" element={<Contact/>}/>
+                  <Route path="/genero" element={<Genero/>}/>
                   <Route path="/login" element={<Login/>}/>
               </Routes>
             <Footer/>
