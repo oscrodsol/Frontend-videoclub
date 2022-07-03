@@ -18,6 +18,12 @@ export const userSlice = createSlice({
             return{
                 ...state.initialState
             }
+        },register: (state, action) => {
+            return {
+                ...state,
+                isRegister: true,
+                successMessage: 'Te has registrado correctamente'
+            }
         }
     },
 });
@@ -41,10 +47,30 @@ export const loginUsuario = (body) => async (dispatch) => {
 export const logOut = () => (dispatch) => {
     dispatch(logout());
 };
+export const registerUser = (nombre, dni , password, email, telefono) => async (dispatch) => {
+    try {
+        const user = await axios.post('https://videoclub-backend.herokuapp.com/usuarios/register',
+        {
+            nombre: nombre,
+            password: password,
+            telefono: telefono,
+            email: email,
+            dni: dni
+        })
+
+        let response = user
+        if(response.status === 200){
+            dispatch(register(response.data))
+        } 
+    } catch (error) {
+        dispatch(logError(error))
+    }
+}
 
 export const {login, logout} = userSlice.actions
 
 export const selectDatosUsuario = (state) => state.usuario
+export const userSelector = (state) =>state.user
 
 export default userSlice.reducer;
 
