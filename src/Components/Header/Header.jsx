@@ -37,6 +37,22 @@ const Header = props => {
             </div>
         </div>
     )
+    }else if(credenciales.user.admin === true){
+        return (
+            <div className="header">
+                <img className="logo" src={img} />
+                <div className="menu_header">
+                    <NavLink className="navlink" to="/">Inicio</NavLink>
+                    {/* <NavLink className="navlink" to="/movies">Categorias</NavLink> */}
+                    <NavLink className="navlink" to="/genero">Genero</NavLink>
+                    <NavLink className="navlink" to="/genero">Admin</NavLink>
+                    <input className="listInput" onKeyPress={cambioPagina} placeholder="Titulo..." type="text" name="titulo" />
+                </div>
+                <div>
+                    <NavLink className="navlink" to="/Profile">Bienvenido,{credenciales.user.nombre} </NavLink>
+                </div>
+            </div>
+        )
     }else{
         return (
             <div className="header">
@@ -44,7 +60,7 @@ const Header = props => {
                 <div className="menu_header">
                     <NavLink className="navlink" to="/">Inicio</NavLink>
                     {/* <NavLink className="navlink" to="/movies">Categorias</NavLink> */}
-                    <NavLink className="navlink" to="/contact">Contacto</NavLink>
+                    <NavLink className="navlink" to="/genero">Genero</NavLink>
                     <input className="listInput" onKeyPress={cambioPagina} placeholder="Titulo..." type="text" name="titulo" />
                 </div>
                 <div>
