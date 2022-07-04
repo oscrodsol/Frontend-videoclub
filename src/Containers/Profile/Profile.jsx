@@ -3,7 +3,7 @@ import "./Profile.css"
 import { useSelector, useDispatch } from 'react-redux';
 import { selectDatosUsuario, loginUsuario } from '../User/userSlice';
 import {useEffect} from 'react';
-import { logout, userSelector, login } from '../../containers/User/userSlice'
+import { logOut, userSelector, login } from '../../containers/User/userSlice'
 import { useNavigate } from 'react-router-dom'
 
 
@@ -24,9 +24,10 @@ console.log(credenciales.user);
 
             <div>
                 <div className="sendButton" onClick={()=>{
+                        /* navegador("/") */
+                         /* localStorage.clear() */ 
+                        dispatch(logOut())
                         navegador("/")
-                         localStorage.clear() 
-                        dispatch(logout())
                     }}>Logout</div><br></br>
             </div>
         </div>
