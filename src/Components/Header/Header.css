@@ -12,6 +12,11 @@
     margin: 3em;
     font-size: 1.5em;
 }
+.navlinkp{
+    all:unset;
+    font-size: 1.6em;
+    cursor:pointer;
+}
 .navlink:hover{
     color:rgb(0, 174, 255);
     display: flex;
@@ -43,3 +48,15 @@
     width: 12em;
     height: 2em;
 }
+.vistaadmin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right:8em;
+    width: 20em;
+}
+.adminp{
+    font-size:1.5em;
+}
+

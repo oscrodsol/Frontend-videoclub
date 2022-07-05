@@ -8,6 +8,7 @@ import Footer from "./Components/Footer/Footer"
 import Register from "./Containers/User/Register/Register"
 import Login from "./Containers/User/Login/Login"
 import Profile from "./Containers/Profile/Profile"
+import Admin from "./Containers/Admin/Admin"
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
                   <Route path="/genero" element={<Genero/>}/>
                   <Route path="/login" element={<Login/>}/>
                   <Route path="/profile" element={<Profile/>}/>
+                  <Route path="/admin" element={<Admin/>}/>
               </Routes>
             <Footer/>
       </BrowserRouter>
