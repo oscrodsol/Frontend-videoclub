@@ -14,7 +14,6 @@ const Admin =  (props) => {
         verRent:"",
         id:""
     }) 
-    console.log(alquiler.id)
     const mostrarAlquileres = async () =>{
         try{
         const config = {
@@ -38,7 +37,7 @@ const Admin =  (props) => {
                 "Authorization":`Bearer ${token.token}`
             }
         }
-        axios.get('https://videoclub-backend.herokuapp.com/alquileres/veralquiler/3',config)
+        axios.get(`https://videoclub-backend.herokuapp.com/alquileres/veralquiler/${alquiler.id}`,config)
         .then(resp =>{
             console.log('holaquetal', resp.data)
         })
@@ -46,12 +45,16 @@ const Admin =  (props) => {
         console.log(error)
     }}
     const valorId = (event) => {
-        if(event.key === "Enter") {
-            setAlquiler({
-                id: event
-            })
-        }  
+
+        setAlquiler({
+            ...alquiler,
+            id: event.target.value
+            
+        })
+        console.log(event.target.value)
     }
+   
+
    
     return (
         <div className="admin">
