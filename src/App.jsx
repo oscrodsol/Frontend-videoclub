@@ -9,6 +9,7 @@ import Register from "./Containers/User/Register/Register"
 import Login from "./Containers/User/Login/Login"
 import Profile from "./Containers/Profile/Profile"
 import Admin from "./Containers/Admin/Admin"
+import FiltrarAlquilerId from "./Containers/Admin/FiltrarAlquilerId/FiltrarAlquilerId"
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
                   <Route path="/login" element={<Login/>}/>
                   <Route path="/profile" element={<Profile/>}/>
                   <Route path="/admin" element={<Admin/>}/>
+                  <Route path="/filtraralquilerId" element={<FiltrarAlquilerId/>}/>
               </Routes>
             <Footer/>
       </BrowserRouter>

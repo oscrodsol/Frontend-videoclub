@@ -46,14 +46,12 @@ const Header = props => {
                     {/* <NavLink className="navlink" to="/movies">Categorias</NavLink> */}
                     <NavLink className="navlink" to="/genero">Genero</NavLink>
                     <NavLink className="navlink" to="/admin">Admin</NavLink>
-                    <input className="listInput" onKeyPress={cambioPagina} placeholder="Titulo..." type="text" name="titulo" />
+                    <input className="listInput" onKeyPress={cambioPagina} placeholder="Titulo..." type="text" name="titulo"/>
                 </div>
                 <div className="vistaadmin">
                     <NavLink className="navlinkp" to="/Profile">Bienvenido, {credenciales.user.nombre} </NavLink>
                     <span className="adminp">ADMIN</span>
                 </div>
-                    
-                
             </div>
         )
     }else{

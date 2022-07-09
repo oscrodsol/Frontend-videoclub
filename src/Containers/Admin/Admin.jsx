@@ -1,19 +1,19 @@
-import React, {useState, useEffect} from "react"
+import React, {useEffect, useState} from "react"
 import "./Admin.css"
 import axios from "axios"
-import {useDispatch, useSelector} from 'react-redux'
+import {useNavigate} from 'react-router-dom'
+import { useSelector} from 'react-redux'
 import { Button } from "react-bootstrap"
-import { loginUsuario, selectDatosUsuario } from "../User/userSlice"
+import { selectDatosUsuario } from "../User/userSlice"
 import AlquileresCard from "../../Components/AlquileresCard/AlquileresCard"
 
-const Admin =  (props) => {
 
+const Admin =  (props) => {
+    const navigate = useNavigate();
     const token = useSelector(selectDatosUsuario);
     const [alquiler, setAlquiler] = useState({
-        rent:[],
-        verRent:"",
-        id:""
-    }) 
+        rent:[]
+    })
     const mostrarAlquileres = async () =>{
         try{
         const config = {
@@ -30,46 +30,22 @@ const Admin =  (props) => {
     } catch (error){
         console.log(error)
     }}
-    const verAlquiler= async () =>{
-        try{
-        const config = {
-            headers: {
-                "Authorization":`Bearer ${token.token}`
-            }
-        }
-        axios.get(`https://videoclub-backend.herokuapp.com/alquileres/veralquiler/${alquiler.id}`,config)
-        .then(resp =>{
-            console.log('holaquetal', resp.data)
-        })
-    } catch (error){
-        console.log(error)
-    }}
-    const valorId = (event) => {
-
-        setAlquiler({
-            ...alquiler,
-            id: event.target.value
-            
-        })
-        console.log(event.target.value)
-    }
-   
-
-   
+    
     return (
         <div className="admin">
-            <Button className="adminb" variant="outline-success" onClick={()=> mostrarAlquileres()} >Alquileres</Button>
-            <Button className="adminb"  variant="outline-success" onClick={()=> verAlquiler()}>Añadir Alquiler</Button>
-            <input className="listInput" onKeyPress={valorId} placeholder="Titulo..." type="text" name="titulo" /> 
+                <div className="adminb"><Button className="adminb" variant="outline-success" onClick={()=> mostrarAlquileres()}>Alquileres</Button>
+                {/* <Button className="adminb" variant="outline-success" onClick={()=> navigate("/filtraralquilerid")}>Alquiler id</Button> */}
+                </div>
             
-                {
-                alquiler.rent.map((alquiler, index) => (
-                    <AlquileresCard key={index} data={alquiler}/> 
-                ))
-                }
-
+                <div className="info">{
+                    alquiler.rent.map((alquiler, index) => (
+                        <AlquileresCard key={index} data={alquiler}/> 
+                    ))
+                    }
+                </div>  
         </div>
     )
 }
+
 
 export default Admin
