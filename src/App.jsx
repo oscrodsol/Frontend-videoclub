@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import './App.css'
 import List from './Containers/List/List'
-import Genero from "./Containers/Genero/Genero"
+import TopRated from "./Containers/TopRated/TopRated"
 import Home from './Containers/Home/Home'
 import Header from "./Components/Header/Header"
 import Footer from "./Components/Footer/Footer"
@@ -19,7 +19,7 @@ function App() {
                   <Route path="/" element={<Home/>}/>
                   <Route path="/movies" element={<List/>}/>
                   <Route path="/register" element={<Register/>}/>
-                  <Route path="/genero" element={<Genero/>}/>
+                  <Route path="/toprated" element={<TopRated/>}/>
                   <Route path="/login" element={<Login/>}/>
                   <Route path="/profile" element={<Profile/>}/>
               </Routes>
