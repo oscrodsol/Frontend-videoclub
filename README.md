@@ -1,4 +1,4 @@
-<h2 align="center">Frontend-Videoclub</h2>
+<h1 align="center">Frontend-Videoclub</h1>
 
 ---
 
