@@ -39,7 +39,10 @@ ES necesario crear un frontend que estéconectado al backend y a una base de dat
    - muestra el perfil del usuario registrado, logrado.
 * Otras propuestas de mejora: en desarrollo
 
-## imágenes del proyecto
+## Imágenes del proyecto
 
 # Aquí podemos observar la página principal que encontrará el usuario
 <img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/Home.png" alt="Home"/>
+
+# En este apartado el usuario se puede registrar
+<img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/Register.png" alt="Register"/>
