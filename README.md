@@ -64,3 +64,6 @@ ES necesario crear un frontend que estéconectado al backend y a una base de dat
 
 # El usuario registrado puede tener privilegios de administrador y ello le da acceso a distintas funciones
 <img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/HeaderAdmin.png" alt="Admin"/>
+
+# Si el usuario tiene privilegios de admin podrá tener acceso a información sobre los alquileres y el resto de usuarios
+<img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/AlquileresAdmin.png" alt="Alquileres"/>
