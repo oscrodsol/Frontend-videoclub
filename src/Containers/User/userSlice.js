@@ -16,7 +16,11 @@ export const userSlice = createSlice({
         },
         logout: (state, action) => {
             return{
-                ...state.initialState
+                ...state,
+                token: "",
+                user: "",
+                iat: "",
+                exp: ""
             }
         },register: (state, action) => {
             return {
