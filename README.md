@@ -1,4 +1,4 @@
-<h1 align="center">Frontend-Videoclub</h1>
+<h2 align="center">Frontend-Videoclub</h2>
 
 ---
 
@@ -6,6 +6,7 @@
 
 Proyecto creado como una tarea grupal para el Bootcamp de Full Stack Developer en GeeksHubs Academy.
 La tarea a realizar consistirá en crear una web para in videoclub online, en el que el frorntend esté conectado al backend y pueda acceder a una base de datos.
+ES necesario crear un frontend que estéconectado al backend y a una base de datos para intercambiar la información entre ellos. El usuario podrá acceder a la web y ver un listado de películas, registrarse y loguearse para poder seleccionar una y alquilarla.
 
 ## Requisitos básicos:
 
@@ -13,6 +14,7 @@ La tarea a realizar consistirá en crear una web para in videoclub online, en el
 * Login de usuario.
 * Listar las películas.
 * Hacer alguna búsqueda de usuario y/o películas de la base de datos.
+* El proyecto debe estar desplegado e incluir un README
 
 ## Mejoras sugeridas:
 
@@ -36,3 +38,8 @@ La tarea a realizar consistirá en crear una web para in videoclub online, en el
 * Propuestas de mejora: 
    - muestra el perfil del usuario registrado, logrado.
 * Otras propuestas de mejora: en desarrollo
+
+## imágenes del proyecto
+
+# Aquí podemos observar la página principal que encontrará el usuario
+<img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/Home.png" alt="Home"/>
