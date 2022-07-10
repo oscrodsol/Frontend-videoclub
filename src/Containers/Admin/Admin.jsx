@@ -34,7 +34,7 @@ const Admin =  (props) => {
     return (
         <div className="admin">
                 <div className="adminb"><Button className="adminb" variant="outline-success" onClick={()=> mostrarAlquileres()}>Alquileres</Button>
-                {/* <Button className="adminb" variant="outline-success" onClick={()=> navigate("/filtraralquilerid")}>Alquiler id</Button> */}
+                <Button className="adminb" variant="outline-success" onClick={()=> navigate("/filtraralquilerid")}>Alquiler id</Button>
                 </div>
             
                 <div className="info">{

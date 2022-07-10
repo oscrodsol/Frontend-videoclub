@@ -1,8 +1,8 @@
-import React, {useState} from "react"
+import React, { useEffect, useState } from "react"
 import "./FiltrarAlquilerId.css"
 import axios from "axios"
-import {useNavigate} from 'react-router-dom'
-import { useSelector} from 'react-redux'
+import { useNavigate } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 import { Button } from "react-bootstrap"
 import { selectDatosUsuario } from "../../User/userSlice"
 import VerAlquilerCard from "../../../Components/VerAlquilerCard/VerAlquilerCard"
@@ -10,7 +10,7 @@ import VerAlquilerCard from "../../../Components/VerAlquilerCard/VerAlquilerCard
 const FiltrarAlquilerId =  (props) => {
     const navigate = useNavigate();
     const token = useSelector(selectDatosUsuario);
-    const [alquiler, setAlquiler] = useState({
+    const [alquilerUnico, setAlquilerUnico] = useState({
         verRent:[],
         id:""
     }) 
@@ -22,9 +22,9 @@ const FiltrarAlquilerId =  (props) => {
                 "Authorization":`Bearer ${token.token}`
             }
         }
-        axios.get(`https://videoclub-backend.herokuapp.com/alquileres/veralquiler/${alquiler.id}`,config)
+        axios.get(`https://videoclub-backend.herokuapp.com/alquileres/veralquiler/${alquilerUnico.id}`,config)
         .then(resp =>{
-            setAlquiler({
+            setAlquilerUnico({
             verRent: resp.data
             })
         })
@@ -34,14 +34,16 @@ const FiltrarAlquilerId =  (props) => {
 
     const valorId = (event) => {
         if(event.key === 'Enter'){
-            setAlquiler({
-                ...alquiler,
+            setAlquilerUnico({
+                ...alquilerUnico,
                 id: event.target.value
-            })
-            verAlquiler();
-        }
+            });
+        };
         event.target.value = "";
-    }
+        setTimeout(()=>{
+            verAlquiler();
+        });
+    };
 
       
 return (
@@ -50,7 +52,7 @@ return (
              
             <input className="listInput" onKeyPress={valorId}placeholder="Titulo..." type="text" name="titulo" /> 
 
-            {alquiler.verRent.map((verRentId, index) => (
+            {alquilerUnico.verRent.map((verRentId, index) => (
             <VerAlquilerCard key={index} data={verRentId} />
             ))}
         </div>
