@@ -56,4 +56,7 @@ ES necesario crear un frontend que estéconectado al backend y a una base de dat
 # Si se selecciona en la cabecera, se puedes ver una selección de películas mejor valoradas
 <img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/Top%20Rated.png" alt="Top Rated Movies"/>
 
+# Los usuarios registrados con anterioridad, pueden loguearse
+<img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/Login.png" alt="Login"/>
+
 
