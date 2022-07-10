@@ -48,7 +48,7 @@ ES necesario crear un frontend que estéconectado al backend y a una base de dat
 <img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/Register.png" alt="Register"/>
 
 # El usuario registrado puede ver la información de su perfil
-<img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/Register.png" alt="Profile"/>
+<img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/UserProfile.png" alt="Profile"/>
 
 # Si el usuario está registrado, la cabecera se personaliza con su nombre
 <img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/HeaderUser.png" alt="User Header"/>
@@ -57,7 +57,7 @@ ES necesario crear un frontend que estéconectado al backend y a una base de dat
 <img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/Top%20Rated.png" alt="Top Rated Movies"/>
 
 # Los usuarios registrados con anterioridad, pueden loguearse
-<img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/Login.png" alt="Login"/>
+<img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/LoginCaptura.png" alt="Login"/>
 
 # Seleccionando desde la cabecera, se pueden hacer búsquedas entre el listado de películas
 <img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/Busqueda.png" alt="Search"/>
