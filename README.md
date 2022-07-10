@@ -53,4 +53,7 @@ ES necesario crear un frontend que estéconectado al backend y a una base de dat
 # Si el usuario está registrado, la cabecera se personaliza con su nombre
 <img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/HeaderUser.png" alt="User Header"/>
 
+# Si se selecciona en la cabecera, se puedes ver una selección de películas mejor valoradas
+<img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/Top%20Rated.png" alt="Top Rated Movies"/>
+
 
