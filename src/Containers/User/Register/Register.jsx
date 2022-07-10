@@ -34,15 +34,8 @@ const Register = props => {
         email: '',
         telefono: ''
         
-/*         isError: false, */
-/*         message: '' */
     })
 
-    /*     useEffect(() => {
-            if(localStorage.getItem('token')) {
-                navigate('/')
-            }
-        }, []) */
 
     const handleInput = (event) => {
         setRegister({

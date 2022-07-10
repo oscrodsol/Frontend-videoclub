@@ -1,0 +1,10 @@
+.AlquileresCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 2em;
+}
+.devolucion{
+    color:red;
+}

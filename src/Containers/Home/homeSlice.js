@@ -52,6 +52,7 @@ export const peliculasFiltradas = (titulo, genero, url, duracion, rating, sinops
 };
 
 
+
 export const {letraPelicula} = homeSlice.actions
 
 export const selectLetraPelicula = (state) => state.peliculas
