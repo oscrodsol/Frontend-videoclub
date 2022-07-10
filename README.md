@@ -33,4 +33,6 @@ La tarea a realizar consistirá en crear una web para in videoclub online, en el
 ## Estado del proyecto
 
 * Requisitos básicos: cumplidos
-* Propuestas de mejora: en desarrollo
+* Propuestas de mejora: 
+   - muestra el perfil del usuario registrado, logrado.
+* Otras propuestas de mejora: en desarrollo
