@@ -46,3 +46,8 @@ ES necesario crear un frontend que estéconectado al backend y a una base de dat
 
 # En este apartado el usuario se puede registrar
 <img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/Register.png" alt="Register"/>
+
+# El usuario registrado puede ver la información de su perfil
+<img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/Register.png" alt="Register"/>
+
+
