@@ -61,3 +61,6 @@ ES necesario crear un frontend que estéconectado al backend y a una base de dat
 
 # Seleccionando desde la cabecera, se pueden hacer búsquedas entre el listado de películas
 <img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/Busqueda.png" alt="Search"/>
+
+# El usuario registrado puede tener privilegios de administrador y ello le da acceso a distintas funciones
+<img src="https://github.com/oscrodsol/Frontend-videoclub/blob/master/src/assets/HeaderAdmin.png" alt="Admin"/>
